@@ -15,4 +15,5 @@ La serie de cursos lo puedes encontrar en el siguiente link: \
  ### Segundo curso:
   - Polimorfismo a fondo.
   - Excepciones y control de errores con try/catch.
+  - Throw new.
 
