@@ -3,7 +3,7 @@ Repositorio hecho para documentar mi avance con Java. No posee ningun proyecto e
 La serie de cursos lo puedes encontrar en el siguiente link: \
 [Formacion Java](https://app.aluracursos.com/formacion-javaoo) \
 ## Topicos vistos
-### Primera clase:
+### Primer curso:
  - Herencia:
     - Super y Subclases.
  - Polimorfismo:
@@ -12,7 +12,7 @@ La serie de cursos lo puedes encontrar en el siguiente link: \
     - Public, private y protected.
  - Abstraccion.
 
- ### Segunda clase:
+ ### Segundo curso:
   - Polimorfismo a fondo.
   - Excepciones y control de errores con try/catch.
 
