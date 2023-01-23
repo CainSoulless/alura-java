@@ -3,7 +3,7 @@ Repositorio hecho para documentar mi avance con Java. No posee ningun proyecto e
 La serie de cursos lo puedes encontrar en el siguiente link: \
 [Formacion Java](https://app.aluracursos.com/formacion-javaoo) 
 ## Topicos vistos
-### Primer curso:
+### Java Herencias y Java Polimorfismo:
  - Herencia:
     - Super y Subclases.
  - Polimorfismo:
@@ -12,9 +12,18 @@ La serie de cursos lo puedes encontrar en el siguiente link: \
     - Public, private y protected.
  - Abstraccion.
 
- ### Segundo curso:
+ ### Java Exepciones:
   - Polimorfismo a fondo.
   - Excepciones y control de errores con try/catch.
   - Throw new.
   - Tipo de excepciones (checked y unchecked).
   - Diferencia entre try_catch y try-with-resources.
+
+ ### Java con java.lang:
+  - Trabajar con packages y convencion de com.example.nombre
+  - Usar import.
+  - Encapsulamiento a fondo.
+      - Public
+      - Default
+      - Protected
+      - Private
