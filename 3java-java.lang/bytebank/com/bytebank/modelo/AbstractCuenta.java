@@ -1,7 +1,9 @@
 package com.bytebank.modelo;
-/* Clase hecha abstracta para ser tratada como superclase para
+/** 
+ * @author Rodrigo Hormazabal
+ * @version 1.0
+ * Clase hecha abstracta para ser tratada como superclase para
  * los demas tipos de cuenta (CuentaAhorros.java y CuentaBonificacion.java).
- *  
  */
 public abstract class AbstractCuenta {
 
@@ -15,6 +17,11 @@ public abstract class AbstractCuenta {
 
     }
 
+    /**
+     * Javadoc de ejemplo.
+     * @param agencia
+     * @param numero
+     */
     public AbstractCuenta( int agencia, int numero) {
         this.agencia = agencia;
         this.numero = numero;
