@@ -1,11 +1,14 @@
 package com.bytebank.modelo;
 
-public class Cliente implements InterfaceAutenticar{
+public class Cliente implements Autenticable {
 
-    private String nombre;
+	// Public es el mas accesible
+	// Protected 
+	
+	private String nombre;
     private String documento;
     private String telefono;
-    // Interface
+
     private AutenticacionUtil util;
 
     public Cliente() {
@@ -38,11 +41,11 @@ public class Cliente implements InterfaceAutenticar{
 
     @Override
     public boolean iniciarSesion(String clave) {
-        return false;
+        return this.util.iniciarSesion(clave);
     }
 
     @Override
     public void setClave(String clave) {
-        this.util.setClave(clave);
+        this.setClave(clave);
     }
 }

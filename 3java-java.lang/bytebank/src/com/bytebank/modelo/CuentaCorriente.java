@@ -1,21 +1,21 @@
 package com.bytebank.modelo;
 
-public class CuentaCorriente extends AbstractCuenta {
+public class CuentaCorriente extends Cuenta {
 
 	public CuentaCorriente( int agencia, int numero) {
 		super(agencia, numero);
 	}
 	
 	@Override
-	public boolean saca(double valor) {
+	public void saca(double valor) throws SaldoInsuficienteException {
 		double comision = 0.2;
-		return super.saca(valor + comision);
+		super.saca(valor + comision);
 	}
 
 	@Override
 	public void deposita(double valor) {
 		// TODO Auto-generated method stub
-		this.saldo = this.saldo + valor;
+		
 	}
 	
 }

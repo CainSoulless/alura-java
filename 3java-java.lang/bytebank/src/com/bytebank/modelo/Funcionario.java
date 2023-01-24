@@ -1,14 +1,16 @@
 package com.bytebank.modelo;
 
 
-public abstract class AbstractFuncionario {
+public abstract class Funcionario {
 
     private String nombre;
     private String documento;
     private double salario;
     private int tipo;
+    
+    protected String prueba;
 
-    public AbstractFuncionario() {
+    public Funcionario() {
 
     }
 
