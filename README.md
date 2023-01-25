@@ -27,3 +27,9 @@ La serie de cursos lo puedes encontrar en el siguiente link: \
       - Default
       - Protected
       - Private
+   - Creacion y utilizacion de archivos JAR como librerias o ejecutables.
+  - Objeto padre llamado "Object".
+  - Metodo toString().
+
+ ### Java con java.util:
+  - Arrays.
