@@ -33,3 +33,4 @@ La serie de cursos lo puedes encontrar en el siguiente link: \
 
  ### Java con java.util:
   - Arrays.
+  - Casteo explicito/implicito, posible/imposible.

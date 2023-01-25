@@ -4,8 +4,13 @@ import com.bytebank.modelo.*;
 public class Main {
     public static void main(String[] args) {
         CuentaCorriente cc = new CuentaCorriente(23, 44);
-
-        Cuenta[] cuentas = new Cuenta[5];
+	
+	/* Usar Object no es una practica recomendada ya que 
+	 * es una clase muy ambigua como para ser usada,
+	 * acarreando problemas de lectura para futuros programadores.
+     * Cuenta[] cuentas = new Cuenta[5]
+	 */ 
+	    Object[] cuentas = new Object[5];
         cuentas[1] = cc;
 
         CuentaAhorros ca = new CuentaAhorros(3, 1);
@@ -22,7 +27,7 @@ public class Main {
         CuentaCorriente cuentaCorriente = (CuentaCorriente)cuentas[1];
     }    
 
-    public static void printCuentas(Cuenta[] cuentas) {
+    public static void printCuentas(Object[] cuentas) {
         for (int i = 0; i < cuentas.length; i++) {
             System.out.println(cuentas[i]); 
         }
