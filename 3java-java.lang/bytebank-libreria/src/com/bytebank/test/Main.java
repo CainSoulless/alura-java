@@ -1,11 +1,9 @@
 package com.bytebank.test;
+import com.bytebank.modelo.CuentaCorriente;
+
 
 public class Main {
     public static void main(String[] args) {
-        String nombre = "Alura";
-
-        for (int i = 0; i < 20; i++) {
-            System.out.println(nombre.charAt(i));
-        }
+        CuentaCorriente[] cuentas = new CuentaCorriente[5];
     }    
 }
