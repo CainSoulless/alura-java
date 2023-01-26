@@ -24,5 +24,15 @@ public class TestWrapper {
         Integer ref = Integer.valueOf("3");
         ref++;
         System.out.println(ref);
+
+        /* A pesar de que esta opcion es correcta, no es la mas
+         * adecuada, ya que Double.valueOf() devuelve una referencia
+         * y no un tipo primitivo, la opcion mas idonea seria
+         * Double.parseDouble()
+         */
+        String numeroString = "43";
+        Double stringToDouble = Double.valueOf(numeroString);
+        System.out.println("La clase de stringToDouble es: " + 
+                            stringToDouble.getClass().getSimpleName());
     } 
 }
