@@ -35,3 +35,5 @@ La serie de cursos lo puedes encontrar en el siguiente link: \
   - Arrays.
   - Casteo explicito/implicito, posible/imposible.
   - ArrayList.
+  - LinkedList.
+  - Vectores.
