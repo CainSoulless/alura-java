@@ -1,6 +1,7 @@
 package com.bytebank.test;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import com.bytebank.modelo.Cuenta;
@@ -26,12 +27,36 @@ public class TestOrdenarLista {
         printSaldos(lista);
 
         System.out.println("Despues de ordenado");
-        Comparator<Cuenta> comparator = new OrdenaNumeroCuenta();
-        lista.sort(comparator);
+        // Estas dos lineas se puede optimizar
+        // Comparator<Cuenta> comparator = new OrdenaNumeroCuenta();
+        // lista.sort(comparator);
+        // lista.sort(new OrdenaNumeroCuenta());
+        // printSaldos(lista);
+
+
+        // En versiones mas antiguas se podria hacer de la siguiente
+        // forma:
+        // Comparator<Cuenta> comparatorNombreTitular = new OrdenaNombreTitular();
+        // lista.sort(comparatorNombreTitular);
+
+        // Clase anonima
+        lista.sort(new Comparator<Cuenta>() {
+            @Override
+            public int compare(Cuenta c1, Cuenta c2) {
+                return Integer.compare(c1.getNumero(), c2.getNumero());
+            }
+        });
+        Collections.sort(lista, new Comparator<Cuenta>() {
+            @Override
+            public int compare(Cuenta c1, Cuenta c2) {
+                return c1.getTitular().getNombre()
+                    .compareTo(c2.getTitular().getNombre());
+            }
+        });
         printSaldos(lista);
 
-        Comparator<Cuenta> comparatorNombreTitular = new OrdenaNombreTitular();
-        lista.sort(comparatorNombreTitular);
+        Collections.sort(lista);
+        System.out.println("Despues de ordenar por orden natural");
         printSaldos(lista);
     }    
     public static void printSaldos(List<Cuenta> list) {
@@ -39,20 +64,4 @@ public class TestOrdenarLista {
             System.out.println(cuenta); 
         }
     }
-}
-
-class OrdenaNumeroCuenta implements Comparator<Cuenta> {
-    @Override
-    public int compare(Cuenta c1, Cuenta c2) {
-        return Integer.compare(c1.getNumero(), c2.getNumero());
-    }
-
-}
-class OrdenaNombreTitular implements Comparator<Cuenta> {
-    @Override
-    public int compare(Cuenta o1, Cuenta o2) {
-        return o1.getTitular().getNombre()
-            .compareTo(o2.getTitular().getNombre());
-    }
-
 }

@@ -38,3 +38,6 @@ La serie de cursos lo puedes encontrar en el siguiente link: \
   - LinkedList.
   - Vectores.
   - Wrappers y unboxing
+  - Algoritmos de ordenamiento Integers y String (Comparable y Comparator).
+  - Clases anonimas
+
