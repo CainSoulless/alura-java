@@ -1,8 +1,10 @@
 package br.com.alura;
-
+import br.com.alura.model.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+
+import br.com.alura.model.Curso;
 
 public class EjemploCompareTo {
     public static void main(String[] args) {

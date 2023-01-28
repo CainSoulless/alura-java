@@ -1,12 +1,14 @@
-package br.com.alura;
+package br.com.alura.model;
 
-import java.util.ArrayList;
-
-public class Curso {
+public class Aula {
     private String nombre;
     private int horas;
 
-    public Curso(String nombre, int horas, ArrayList arrayList) {
+    public Aula(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public Aula(String nombre, int horas) {
         this.nombre = nombre;
         this.horas = horas;
     }
@@ -24,6 +26,6 @@ public class Curso {
     }
     @Override
     public String toString() {
-        return this.nombre + this.horas;
+        return this.nombre;
     }
 }
