@@ -43,3 +43,6 @@ La serie de cursos lo puedes encontrar en el siguiente link: \
 
  ### Colecciones a profundidad.
   - ArrayList.
+  - Ordenar lista
+  - Filtrar con Stream
+  - HashSet
